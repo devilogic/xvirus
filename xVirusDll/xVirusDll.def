@@ -1,0 +1,5 @@
+LIBRARY "xVirusDll"
+EXPORTS
+
+g_ofOrigEntryAddressRva
+DllStartup

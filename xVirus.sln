@@ -1,0 +1,116 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xVirus", "xVirus\xVirus.vcxproj", "{E92DEAF6-606C-4EA5-9B6D-35EF50284D70}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EvilKernel", "EvilKernel\EvilKernel.vcxproj", "{2E285BB6-9D18-4FE5-8F97-265CC674EF4F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xVirusAttach", "xVirusAttach\xVirusAttach.vcxproj", "{E7F80C9B-01A1-45E9-80AD-BE976CE07C9A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xVirusDll", "xVirusDll\xVirusDll.vcxproj", "{4DEA6B5C-C41F-4E70-B012-6D0C3D892D32}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xVirusManagerConsole", "xVirusManagerConsole\xVirusManagerConsole.vcxproj", "{38E1171D-573C-4955-B77C-BD79F338920A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E7F80C9B-01A1-45E9-80AD-BE976CE07C9A} = {E7F80C9B-01A1-45E9-80AD-BE976CE07C9A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcommon", "..\..\codes\libcommon\libcommon.vcxproj", "{F7577776-0C10-4042-84D5-244AC22085EC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libsupport", "..\..\codes\libsupport\libsupport.vcxproj", "{A76D3B64-D164-406E-94EA-71ECD8F15EE1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestDll", "TestDll\TestDll.vcxproj", "{84AEDCC4-F1EF-44CC-A620-7A4DC55AE096}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		EvilKernelReleaseWithPrintDbgInfo|Win32 = EvilKernelReleaseWithPrintDbgInfo|Win32
+		Release|Win32 = Release|Win32
+		xVirusDllReleaseWithPrintDbgInfo|Win32 = xVirusDllReleaseWithPrintDbgInfo|Win32
+		xVirusReleaseWithPrintDbgInfo|Win32 = xVirusReleaseWithPrintDbgInfo|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E92DEAF6-606C-4EA5-9B6D-35EF50284D70}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E92DEAF6-606C-4EA5-9B6D-35EF50284D70}.Debug|Win32.Build.0 = Debug|Win32
+		{E92DEAF6-606C-4EA5-9B6D-35EF50284D70}.EvilKernelReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{E92DEAF6-606C-4EA5-9B6D-35EF50284D70}.EvilKernelReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{E92DEAF6-606C-4EA5-9B6D-35EF50284D70}.Release|Win32.ActiveCfg = Release|Win32
+		{E92DEAF6-606C-4EA5-9B6D-35EF50284D70}.Release|Win32.Build.0 = Release|Win32
+		{E92DEAF6-606C-4EA5-9B6D-35EF50284D70}.xVirusDllReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{E92DEAF6-606C-4EA5-9B6D-35EF50284D70}.xVirusDllReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{E92DEAF6-606C-4EA5-9B6D-35EF50284D70}.xVirusReleaseWithPrintDbgInfo|Win32.ActiveCfg = xVirusReleaseWithPrintDbgInfo|Win32
+		{E92DEAF6-606C-4EA5-9B6D-35EF50284D70}.xVirusReleaseWithPrintDbgInfo|Win32.Build.0 = xVirusReleaseWithPrintDbgInfo|Win32
+		{2E285BB6-9D18-4FE5-8F97-265CC674EF4F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2E285BB6-9D18-4FE5-8F97-265CC674EF4F}.Debug|Win32.Build.0 = Debug|Win32
+		{2E285BB6-9D18-4FE5-8F97-265CC674EF4F}.EvilKernelReleaseWithPrintDbgInfo|Win32.ActiveCfg = EvilKernelReleaseWithPrintDbgInfo|Win32
+		{2E285BB6-9D18-4FE5-8F97-265CC674EF4F}.EvilKernelReleaseWithPrintDbgInfo|Win32.Build.0 = EvilKernelReleaseWithPrintDbgInfo|Win32
+		{2E285BB6-9D18-4FE5-8F97-265CC674EF4F}.Release|Win32.ActiveCfg = Release|Win32
+		{2E285BB6-9D18-4FE5-8F97-265CC674EF4F}.Release|Win32.Build.0 = Release|Win32
+		{2E285BB6-9D18-4FE5-8F97-265CC674EF4F}.xVirusDllReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{2E285BB6-9D18-4FE5-8F97-265CC674EF4F}.xVirusDllReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{2E285BB6-9D18-4FE5-8F97-265CC674EF4F}.xVirusReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{2E285BB6-9D18-4FE5-8F97-265CC674EF4F}.xVirusReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{E7F80C9B-01A1-45E9-80AD-BE976CE07C9A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E7F80C9B-01A1-45E9-80AD-BE976CE07C9A}.Debug|Win32.Build.0 = Debug|Win32
+		{E7F80C9B-01A1-45E9-80AD-BE976CE07C9A}.EvilKernelReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{E7F80C9B-01A1-45E9-80AD-BE976CE07C9A}.EvilKernelReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{E7F80C9B-01A1-45E9-80AD-BE976CE07C9A}.Release|Win32.ActiveCfg = Release|Win32
+		{E7F80C9B-01A1-45E9-80AD-BE976CE07C9A}.Release|Win32.Build.0 = Release|Win32
+		{E7F80C9B-01A1-45E9-80AD-BE976CE07C9A}.xVirusDllReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{E7F80C9B-01A1-45E9-80AD-BE976CE07C9A}.xVirusDllReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{E7F80C9B-01A1-45E9-80AD-BE976CE07C9A}.xVirusReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{E7F80C9B-01A1-45E9-80AD-BE976CE07C9A}.xVirusReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{4DEA6B5C-C41F-4E70-B012-6D0C3D892D32}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4DEA6B5C-C41F-4E70-B012-6D0C3D892D32}.Debug|Win32.Build.0 = Debug|Win32
+		{4DEA6B5C-C41F-4E70-B012-6D0C3D892D32}.EvilKernelReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{4DEA6B5C-C41F-4E70-B012-6D0C3D892D32}.EvilKernelReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{4DEA6B5C-C41F-4E70-B012-6D0C3D892D32}.Release|Win32.ActiveCfg = Release|Win32
+		{4DEA6B5C-C41F-4E70-B012-6D0C3D892D32}.Release|Win32.Build.0 = Release|Win32
+		{4DEA6B5C-C41F-4E70-B012-6D0C3D892D32}.xVirusDllReleaseWithPrintDbgInfo|Win32.ActiveCfg = xVirusDllReleaseWithPrintDbgInfo|Win32
+		{4DEA6B5C-C41F-4E70-B012-6D0C3D892D32}.xVirusDllReleaseWithPrintDbgInfo|Win32.Build.0 = xVirusDllReleaseWithPrintDbgInfo|Win32
+		{4DEA6B5C-C41F-4E70-B012-6D0C3D892D32}.xVirusReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{4DEA6B5C-C41F-4E70-B012-6D0C3D892D32}.xVirusReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{38E1171D-573C-4955-B77C-BD79F338920A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{38E1171D-573C-4955-B77C-BD79F338920A}.Debug|Win32.Build.0 = Debug|Win32
+		{38E1171D-573C-4955-B77C-BD79F338920A}.EvilKernelReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{38E1171D-573C-4955-B77C-BD79F338920A}.EvilKernelReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{38E1171D-573C-4955-B77C-BD79F338920A}.Release|Win32.ActiveCfg = Release|Win32
+		{38E1171D-573C-4955-B77C-BD79F338920A}.Release|Win32.Build.0 = Release|Win32
+		{38E1171D-573C-4955-B77C-BD79F338920A}.xVirusDllReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{38E1171D-573C-4955-B77C-BD79F338920A}.xVirusDllReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{38E1171D-573C-4955-B77C-BD79F338920A}.xVirusReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{38E1171D-573C-4955-B77C-BD79F338920A}.xVirusReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{F7577776-0C10-4042-84D5-244AC22085EC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F7577776-0C10-4042-84D5-244AC22085EC}.Debug|Win32.Build.0 = Debug|Win32
+		{F7577776-0C10-4042-84D5-244AC22085EC}.EvilKernelReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{F7577776-0C10-4042-84D5-244AC22085EC}.EvilKernelReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{F7577776-0C10-4042-84D5-244AC22085EC}.Release|Win32.ActiveCfg = Release|Win32
+		{F7577776-0C10-4042-84D5-244AC22085EC}.Release|Win32.Build.0 = Release|Win32
+		{F7577776-0C10-4042-84D5-244AC22085EC}.xVirusDllReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{F7577776-0C10-4042-84D5-244AC22085EC}.xVirusDllReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{F7577776-0C10-4042-84D5-244AC22085EC}.xVirusReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{F7577776-0C10-4042-84D5-244AC22085EC}.xVirusReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{A76D3B64-D164-406E-94EA-71ECD8F15EE1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A76D3B64-D164-406E-94EA-71ECD8F15EE1}.Debug|Win32.Build.0 = Debug|Win32
+		{A76D3B64-D164-406E-94EA-71ECD8F15EE1}.EvilKernelReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{A76D3B64-D164-406E-94EA-71ECD8F15EE1}.EvilKernelReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{A76D3B64-D164-406E-94EA-71ECD8F15EE1}.Release|Win32.ActiveCfg = Release|Win32
+		{A76D3B64-D164-406E-94EA-71ECD8F15EE1}.Release|Win32.Build.0 = Release|Win32
+		{A76D3B64-D164-406E-94EA-71ECD8F15EE1}.xVirusDllReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{A76D3B64-D164-406E-94EA-71ECD8F15EE1}.xVirusDllReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{A76D3B64-D164-406E-94EA-71ECD8F15EE1}.xVirusReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{A76D3B64-D164-406E-94EA-71ECD8F15EE1}.xVirusReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{84AEDCC4-F1EF-44CC-A620-7A4DC55AE096}.Debug|Win32.ActiveCfg = Debug|Win32
+		{84AEDCC4-F1EF-44CC-A620-7A4DC55AE096}.Debug|Win32.Build.0 = Debug|Win32
+		{84AEDCC4-F1EF-44CC-A620-7A4DC55AE096}.EvilKernelReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{84AEDCC4-F1EF-44CC-A620-7A4DC55AE096}.EvilKernelReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{84AEDCC4-F1EF-44CC-A620-7A4DC55AE096}.Release|Win32.ActiveCfg = Release|Win32
+		{84AEDCC4-F1EF-44CC-A620-7A4DC55AE096}.Release|Win32.Build.0 = Release|Win32
+		{84AEDCC4-F1EF-44CC-A620-7A4DC55AE096}.xVirusDllReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{84AEDCC4-F1EF-44CC-A620-7A4DC55AE096}.xVirusDllReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+		{84AEDCC4-F1EF-44CC-A620-7A4DC55AE096}.xVirusReleaseWithPrintDbgInfo|Win32.ActiveCfg = Release|Win32
+		{84AEDCC4-F1EF-44CC-A620-7A4DC55AE096}.xVirusReleaseWithPrintDbgInfo|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,4 @@
+LIBRARY "TestDll"
+EXPORTS
+
+FuckTest

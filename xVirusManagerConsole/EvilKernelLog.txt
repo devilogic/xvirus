@@ -1,0 +1,110 @@
+Get basic information
+Map target dll to orig map address
+It is dll image base = 0x003D0000
+
+iTarget File Size = 0x00001A00
+
+Entry GetRealPeFileSize
+All PE Header Size = 0x00000400
+
+Exit GetRealPeFileSize
+iTarget Real File Size = 0x00001A00
+
+Already CopyMemToMemBySecAlign(pTargetBuffer, pOrigImageBase, iTargetImageSize)
+Entry CopyMemToMemBySecAlign
+PE Header Size = 0x00000400
+
+Current pSectionHeader->VirtualAddress = 0x00001000
+
+Current pSectionHeader->PointerToRawData = 0x00000400
+
+Current pSecMemAddr = 0x003D1000
+
+Current pSecFileAddr = 0x0018B678
+
+Current pSectionHeader->SizeOfRawData = 0x00000A00
+
+Already __logic_memcpy__(pSecMemAddr, pSecFileAddr, iSecSize)
+Current pSectionHeader->VirtualAddress = 0x00002000
+
+Current pSectionHeader->PointerToRawData = 0x00000E00
+
+Current pSecMemAddr = 0x003D2000
+
+Current pSecFileAddr = 0x0018C078
+
+Current pSectionHeader->SizeOfRawData = 0x00000600
+
+Already __logic_memcpy__(pSecMemAddr, pSecFileAddr, iSecSize)
+Current pSectionHeader->VirtualAddress = 0x00003000
+
+Current pSectionHeader->PointerToRawData = 0x00001400
+
+Current pSecMemAddr = 0x003D3000
+
+Current pSecFileAddr = 0x0018C678
+
+Current pSectionHeader->SizeOfRawData = 0x00000200
+
+Already __logic_memcpy__(pSecMemAddr, pSecFileAddr, iSecSize)
+Current pSectionHeader->VirtualAddress = 0x00004000
+
+Current pSectionHeader->PointerToRawData = 0x00001600
+
+Current pSecMemAddr = 0x003D4000
+
+Current pSecFileAddr = 0x0018C878
+
+Current pSectionHeader->SizeOfRawData = 0x00000200
+
+Already __logic_memcpy__(pSecMemAddr, pSecFileAddr, iSecSize)
+Current pSectionHeader->VirtualAddress = 0x00005000
+
+Current pSectionHeader->PointerToRawData = 0x00001800
+
+Current pSecMemAddr = 0x003D5000
+
+Current pSecFileAddr = 0x0018CA78
+
+Current pSectionHeader->SizeOfRawData = 0x00000200
+
+Already __logic_memcpy__(pSecMemAddr, pSecFileAddr, iSecSize)
+Exit CopyMemToMemBySecAlign
+Old ImageBase = 0x10000000
+
+Orig ImageBase = 0x003D0000
+
+BaseRelocation(pOrigImageBase, addrOldImageBase, (__address)pOrigImageBase, FALSE)
+RefixIAT(pOrigImageBase)
+Entry RefixIAT
+Argument pImageBase = 0x003D0000
+
+Already ExistDataDirectory(pImageBase, IMAGE_DIRECTORY_ENTRY_IMPORT)
+Entry ExistDataDirectory
+Argument iIndex = 0x00000001
+
+(pNtHeader->OptionalHeader).DataDirectory[iIndex].VirtualAddress = 0x000021CC
+
+Exit ExistDataDirectory
+Entry ExistDataDirectory
+Argument iIndex = 0x0000000C
+
+(pNtHeader->OptionalHeader).DataDirectory[iIndex].VirtualAddress = 0x00002000
+
+Exit ExistDataDirectory
+Load dll = MSVCR100.dll
+GetProcAddress by Name = _except_handler4_common
+	Import Table Address = 0x003D2040
+
+	Procedure Address = 0x78B2CB44
+
+GetProcAddress by Name = _onexit
+	Import Table Address = 0x003D2044
+
+	Procedure Address = 0x78ABAA3A
+
+GetProcAddress by Name = _lock
+	Import Table Address = 0x003D2048
+
+	Procedure Address = 0x78AB0C43
+
